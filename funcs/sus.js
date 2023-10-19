@@ -197,6 +197,8 @@ const speedMax = {
         ingredite3: 'cafeína'
     },
     precio: '1.500 COP' //PRECIO DE LA BEBIDA
+
+    
 }
 
 class drink {

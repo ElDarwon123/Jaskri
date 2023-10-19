@@ -1,7 +1,7 @@
 function Contact(){
     return(
-    <div>
-        
+    <div className="flex text-center justify-center mt-10">
+        Nuestro contacto
     </div>
     )
 }

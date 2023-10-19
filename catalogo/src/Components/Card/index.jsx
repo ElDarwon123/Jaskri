@@ -1,8 +1,16 @@
+import { useReducer } from 'react'
+import ProductItem from '../../Components/Cart/ProductItem'
+import SCartProduct from '../../Components/Cart/SCartProduct'
+import { reducerCart, productoInitialState } from '../../Components/Reducers/SCReducer'
+import Types from '../../Components/Reducers/inidex'
+
 const Card = () => {
     return (
-        <div diva className="bg-white cursor-pointer w-56 h-60 rounded-lg mt-10">
+
+// ME FALTA HACER QUE EL BOTON DEL CELULAR LO AGREGUE AL CARRITO Y DEMÁS
+        <div className="bg-white cursor-pointer w-56 h-60 rounded-lg m-10">
             <figure className="relative mb-2 w-full h-4/5">
-                <span className="absolute bottom-0 left-0 bg-white/50 rounded-lg text-black text-xs m-2 px-3 py-0.5">
+                <span className="text-Blanco absolute bottom-0 left-0 bg-Blanco/50 rounded-lg text-black text-xs m-2 px-3 py-0.5">
                     {" "}
                     Dispositivos{" "}
                 </span>
@@ -12,16 +20,18 @@ const Card = () => {
                     alt=""
                     srcSet=""
                 />
-                <div className="absolute top-0 right-0 flex justify-center items-center bg-white w-6 h-6 rounded-full m-2 p-1">
-                    +
-                </div>
+                <button className="absolute top-0 right-0 flex justify-center items-center bg-Blanco w-5 h-5 rounded-full m-2 p-1">
+                    <p onClick={()=>addToCart(data.id)}>+</p>
+                </button>
+                
             </figure>
             <p className="flex justify-between">
-                <span className=" text-sm font-light">Celular</span>
+                <span className=" text-sm font-light" >CELULAR</span>
                 <span className="text-lg font-medium">$123</span>
             </p>
         </div>
     );
+
 };
 
 export default Card;

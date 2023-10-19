@@ -1,7 +1,7 @@
 function NotFound(){
     return(
-    <div>
-        ola papu :v
+    <div className="flex text-center justify-center mt-10" >
+        No encontrado
     </div>
     )
 }
