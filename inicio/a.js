@@ -12,15 +12,16 @@ function insertarDatos(valor, list){
     console.log(list)
 */
 /*
-SEGUNDOO
+SEGUNDO
 function lista(inicio, fn){
     let list = [];
-    if(inicio < fin){
-        for(let a = 0 ; a <= fn ; a++){
+    if(inicio < fn){
+        let a =0
+        for(let a = inicio; a <= fn ; a++){
             list.push(a);
         }
     }else{
-        for(let a = 0; a >= fin ; a--){
+        for(let a = inicio; a >= fn ; a--){
             list.push(a);
         }
     }
@@ -30,28 +31,31 @@ function lista(inicio, fn){
 let a = parseInt(prompt("ingrese numero desde donde quiereiniciar"))
 let b = parseInt(prompt("ingrese numero hasta donde va a llegar"))
 lista(a,b)
+
 */
-
-
+/*
+TERCERO
 let k = parseInt(prompt("ingrese numero"));
 let i = 2;
 let result = "";
-
+let lis4=[]
+let lis5=[]
 
 while (k > 1) {
     if (k % i == 0) {
         result += i + " ";
         k /= i;
-        
+        lis4.push(k)
+        lis5.push(i)
     } else {
         i++;
     }
     
-}
+}   
 
-    console.log(result);
-
-
+    console.log(lis4);
+    console.log(lis5);
+*/
 /*
 CUARTO
 let numero = 1;
