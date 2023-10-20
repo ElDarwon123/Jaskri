@@ -13,7 +13,7 @@ const Navbar = () =>{
     return (
         <>
         
-        <nav className='flex justify-center items-center fixed z-10 w-full p-4 px-8 text-sm font-light bg-Discord text-Blanco' >
+            <nav className='nav flex justify-center items-center fixed z-10 w-full p-4 px-8 text-sm font-light text-Blanco' >
             <ul className='flex items-center gap-3' >
                 <li className='font-semibold text-lg gap-3 '>
                     <NavLink to='/'

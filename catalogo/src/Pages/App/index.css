@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background-color: #282b30;
+}
+.nav{
+    background-color: #424549;
+}
+.carta{
+    background-color: gray;
+}
+.titulo{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    margin-left: 1em;
+}
+.precio{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin-right: 1em;
+}
