@@ -1,31 +1,82 @@
-.Human{
+body{
+    background-image: url(https://images7.alphacoders.com/796/796109.jpg);
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+    padding: 2em 5em 0em 4em;
+}
+.titulo{
+    margin-left: 35%;
+    width: 25em;
+}
+/*.Human{
     background-color: palevioletred;
 }
 .Alien{
-    background-color: aquamarine;
+    background-color: darkseagreen;
+}*/
+/* Define the container for posts */
+#posts {
+    display: flex; /* Display posts as a flex container */
+    flex-wrap: wrap; /* Allow posts to wrap onto multiple lines */
 }
-#posts{
-    display: flex;
-    flex-wrap: wrap;
-}
-.card{
+/* Una tarjeta con un fondo verde y un borde amarillo sólido de 3px */
+.card {
+    background-color: #4cb5c3; /* Fondo verde */
+    border: 3px solid #97ce4c; /* Borde amarillo */
+
+    /* La tarjeta es un contenedor flexible con sus elementos centrados */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-    border-radius: 20px;
-    width: 10em;
-    transition: 0.3s;
 
+    /* La tarjeta tiene un margen de 10px y un radio de borde de 10px */
+    margin: 10px;
+    border-radius: 10px;
+
+    /* El ancho de la tarjeta es de 12em y tiene una transición de 0.6s */
+    width: 12em;
+    transition: 0.6s;
+
+    /* El cursor de la tarjeta es un puntero y su texto está centrado */
+    cursor: pointer;
+    text-align: center;
+}
+/* El enlace dentro de la tarjeta no tiene decoración de texto, es de color blanco, 
+no tiene margen, es de peso de fuente en negrita y tiene un margen inferior de 1em */
+.card a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.names{
+    font-size: 100%;
+    
+    
+}
+.species{
+    margin-top: -80px;
 }
 img{
     width: 8em;
-    margin-top: 10px;
-    border-radius: 20px;
+    margin-top: -20px;
+    border-radius: 50%;
     
 }
 .card:hover{
     margin: 80px;
     transform: scale(150%);
+}
+.stat{
+    margin: 0px;
+    width: 1.5em;
 }

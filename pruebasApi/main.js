@@ -53,16 +53,27 @@ fetch('https://rickandmortyapi.com/api/character')
 .then(data => {
     // console.log(data);
         
-        
+        let a = (x) => {
+            if(x == 'Alive'){
+               return `<img class="stat" src="https://cdn.pixabay.com/photo/2020/08/04/11/45/heart-5462571_1280.png" alt=""></img>`
+            }else if(x == 'Dead'){
+                return `<img class="stat" src="https://genesistoxical.com/wp-content/uploads/2021/05/Calavera_dibujo_animado.png" alt=""></img>`
+            }else{
+                return `<img class="stat" src="https://cdn-icons-png.flaticon.com/512/5446/5446963.png" alt=""></img>`
+            }
+        }
         
         for(let i = 0; i < data.results.length; i++) {
-            elementos += `
-            <div class="card ${data.results[i].species}"  > 
-            <img src="${data.results[i].image}" alt=""> 
-            <h2>${data.results[i].name}</h2>
-            <p>${data.results[i].species}</p>
             
-            </div>`
+            elementos += `
+            <li class="card ${data.results[i].species}">
+            <img src="${data.results[i].image}" alt=""> 
+            <h2 class="names">${data.results[i].name}</h2>
+            <p clas="species">${data.results[i].species +' ' + a(data.results[i].status)}</p>
+            
+            <a href="">Ver más</a>
+            </li>`;
+            
             
             
             
