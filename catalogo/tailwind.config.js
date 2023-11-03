@@ -7,10 +7,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
+    /*colors: {
       'Discord': '#424549',
       'Blanco': '#fff',
-    },
+      'Black': '#000'
+    },*/
     extend: {},
   },
   plugins: [

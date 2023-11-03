@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import Layout from '../../Components/Layout'
 import Card from "../../Components/Card"
 import React from 'react'
+import ProductDetail from '../../Components/ProductDetail'
+
 
 const Home = () =>{
     //así se crean variables en react, dentro del useState va el valor o el dato :v
@@ -26,7 +28,7 @@ const Home = () =>{
                 }
                 
             </div>
-            
+            <ProductDetail/>
         </Layout>
     )
 }
